@@ -1,0 +1,550 @@
+Q.1:Write a c program for user input?
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter the number for a");
+    scanf("%d",&a);
+    printf("The Value of a:%d",a);
+    return 0;
+    
+}
+----------------------------------------------------
+Q.2:Write a c program for user input?
+sol:
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("Enter the Value for a");
+    scanf("%f",&a);
+    printf("The Value of a:%f",a);
+    return 0;
+    
+}
+-----------------------------------------------------------------
+Q.3:Write a c perogram for char user input ?
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf(" Enter the character is :");
+    scanf("%c",&a);
+    printf("the character is %c",a);
+    return 0;
+}
+----------------------------------------------------------------
+Q.4 Write a c program for Adding two values by user input?
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter the first number :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the second number :");
+    scanf("%d",&b);
+    int c=a+b;
+    printf("The sum of number :%d",c);
+    return 0;
+}
+-------------------------------------------------------------------
+Q.5 Write a c program for Subtracting two values by user input?
+sol:#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter the first number :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the second number :");
+    scanf("%d",&b);
+    int c=a-b;
+    printf("The subtract of number :%d",c);
+    return 0;
+}
+----------------------------------------------------------------------
+Q.6: Write a c program for multiply two number by user input?
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter the first number :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the second number :");
+    scanf("%d",&b);
+    int c=a*b;
+    printf("The Product of number :%d",c);
+    return 0;
+}
+-----------------------------------------------------------------------
+Q.7: Write a C program for Divide Two number by user input?
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter the first number :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the second number :");
+    scanf("%d",&b);
+    int c=a/b;
+    printf("The Division of number :%d",c);
+    return 0;
+}
+---------------------------------------------------------------------------
+Q.8: Write a c program of user input for eq-45+78+23+12?
+sol:
+#include<stdio.h>
+int main()
+{
+      int a;
+    printf("Enter the value for a :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the value for b :");
+    scanf("%d",&b);
+    int c;
+    printf("Enter the value for c :");
+    scanf("%d",&c);
+    int d;
+    printf("Enter the value for d :");
+    scanf("%d",&d);
+    int result=a+b+c+d;
+    printf("The solution is :%d",result);
+   
+    return 0;
+    
+}
+-----------------------------------------------------------------------------------
+Q.9:Write a c program of user input for eq-56*34+12/2-13?
+sol:
+#include<stdio.h>
+int main()
+{
+      int a;
+    printf("Enter the value for a :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the value for b :");
+    scanf("%d",&b);
+    int c;
+    printf("Enter the value for c :");
+    scanf("%d",&c);
+    int d;
+    printf("Enter the value for d :");
+    scanf("%d",&d);
+    int e;
+    printf("Enter the value for e :");
+    scanf("%d",&e);
+    int result=a*b+c/d-e;
+    printf("The solution is :%d",result);
+   
+    return 0;
+    
+}
+---------------------------------------------------------------------------------------- 
+Q.10:Write a c program of user input for eq-1.2*6.7-4.5/2?
+sol:
+#include<stdio.h>
+int main()
+{
+      float a;
+    printf("Enter the value for a :");
+    scanf("%f",&a);
+    float b;
+    printf("Enter the value for b :");
+    scanf("%f",&b);
+    float c;
+    printf("Enter the value for c :");
+    scanf("%f",&c);
+    int d;
+    printf("Enter the value for d :");
+    scanf("%d",&d);
+    int result=a*b-c/d;
+    printf("The solution is :%d",result);
+    return 0;
+    
+}
+------------------------------------------------------------------------------------------- 
+Q.11: Write a c program of user input for eq-1.6*(12-2)/2+7.8-1.5?
+sol:
+#include<stdio.h>
+int main()
+{
+      float a;
+    printf("Enter the value for a :");
+    scanf("%f",&a);
+    int b;
+    printf("Enter the value for b :");
+    scanf("%d",&b);
+    int c;
+    printf("Enter the value for c :");
+    scanf("%d",&c);
+    float d;
+    printf("Enter the value for d :");
+    scanf("%f",&d);
+    float e;
+    printf("Enter the value for e:");
+    scanf("%f",&e);
+    float result=a*(b-c)/c+d-e;
+    printf("The solution is :%f",result);
+    return 0;
+    
+}
+---------------------------------------------------------------------------- 
+Q.12:Write a c program of user input for eq-4.5*1.2-(82/2)-5.6 +1.234?
+sol:
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("Enter the value for a :");
+    scanf("%f",&a);
+    float b;
+    printf("Enter the value for b :");
+    scanf("%f",&b);
+    int c;
+    printf("Enter the value for c :");
+    scanf("%d",&c);
+    int d;
+    printf("Enter the value for d :");
+    scanf("%d",&d);
+    float e;
+    printf("Enter the value for e:");
+    scanf("%f",&e);
+    float f;
+    printf("Enter the value for f :");
+    scanf("%f",&f);
+    float result=a*b-(c/d)-e+f;
+    printf("The solution is :%f",result);
+    return 0;
+    
+}
+------------------------------------------------------------------------------
+Q.13:Write a c program of user input for eq-3.4+1.2*(3.7-1.2)/2+6.8?
+sol:
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("Enter the value for a :");
+    scanf("%f",&a);
+    float b;
+    printf("Enter the value for b :");
+    scanf("%f",&b);
+    float c;
+    printf("Enter the value for c :");
+    scanf("%f",&c);
+    float d;
+    printf("Enter the value for d :");
+    scanf("%f",&d);
+    int e;
+    printf("Enter the value for e:");
+    scanf("%d",&e);
+    float f;
+    printf("Enter the value for f :");
+    scanf("%f",&f);
+    float result=a+b*(c-d)/e+f;
+    printf("The solution is :%f",result);
+    return 0;
+    
+}
+----------------------------------------------------------------------------
+Q.14:Write a c program of user input for eq-8.9*1.67-(6.21-5.6)+7.8-34 +157?
+sol:
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("Enter the value for a :");
+    scanf("%f",&a);
+    float b;
+    printf("Enter the value for b :");
+    scanf("%f",&b);
+    float c;
+    printf("Enter the value for c :");
+    scanf("%f",&c);
+    float d;
+    printf("Enter the value for d :");
+    scanf("%f",&d);
+    float e;
+    printf("Enter the value for e:");
+    scanf("%f",&e);
+    int f;
+    printf("Enter the value for f :");
+    scanf("%d",&f);
+    int g;
+    printf("Enter the value for g :");
+    scanf("%d",&g);
+    float result=a*b-(c-d)+e-f+g;
+    printf("The solution is :%f",result);
+    return 0;
+    
+}
+------------------------------------------------------------------------------------
+Q.15:Write a c program of user input for eq-8*1+(4-2)/1+6?
+sol:
+#include<stdio.h>
+int main()
+{
+    // 8*1+(4-2)/1+6
+    int a;
+    printf("Enter the value for a:");
+    scanf("%d",&a);
+    int b;
+    printf("Enter the value for b:");
+    scanf("%d",&b);
+    int c;
+     printf("Enter the value for c:");
+     scanf("%d",&c);
+    int d;
+     printf("Enter the value for d:");
+     scanf("%d",&d);
+     int e;
+     printf("Enter the value for e:");
+     scanf("%d",&e);
+    int f;
+     printf("Enter the value for f:");
+     scanf("%d",&f);
+     int result=a*b+(c-d)/e+f;
+     printf("The solution is :%d",result);
+    return 0;
+}
+------------------------------------------------------------------------------------------
+Q.16:write a c program and check a number is greater than 10 or not :
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter Your Number");
+    scanf("%d",&a);
+    if(a>10)
+    {
+     printf("Number is greater than 10");
+    }
+    else
+    {
+        printf("Number is not greater than 10");
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------
+Q.17:write a c program and check a number is greater than 50 or not: 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter Your Number");
+    scanf("%d",&a);
+    if(a>50)
+    {
+     printf("Number is greater than 50");
+    }
+    else
+    {
+        printf("Number is not greater than 50");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------
+Q.18:write a c program and check a number is greater than 45  or not: 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter Your Number");
+    scanf("%d",&a);
+    if(a>45)
+    {
+     printf("Number is greater than 45");
+    }
+    else
+    {
+        printf("Number is not greater than 45");
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------------
+Q.19:write a c program and check a user is valid for voter or not ?
+sol:#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter Your Age :");
+    scanf("%d",&a);
+    if(a>=18)
+    {
+     printf("You are eligible for vote");
+    }
+    else
+    {
+        printf("Number is not eligible for vote");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------
+Q.20:check a number is even or odd : 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter your number :");
+    scanf("%d",&a);
+    if (a%2==0)
+    {
+        printf("Your Number is even");
+    }
+    else
+    {
+        printf("Your Number is odd");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------
+Q.21:write a c program and check a number is divisible by 5 or not ? 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter your number :");
+    scanf("%d",&a);
+    if (a%5==0)
+    {
+        printf("Your Number is divisible by 5");
+    }
+    else
+    {
+        printf("Your Number is not divisible by 5");
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------
+Q.21:write a c program input character 'a' then print apple otherwise input is not valid ?
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Write your character :");
+    scanf("%c",&a);
+    if(a=='a') 
+    {
+        printf("Apple");
+    }
+    else
+    {
+    printf("Input is not valid");    
+    }
+    return 0;
+    
+}
+-----------------------------------------------------------------------------------------------
+Q.22:write a c program input character 'h' then print house otherwise input is not valid ?
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Write your character :");
+    scanf("%c",&a);
+    if(a=='h') 
+    {
+        printf("House");
+    }
+    else
+    {
+    printf("Input is not valid");    
+    }
+    return 0;
+    
+}
+-------------------------------------------------------------------------------------------------
+Q.23:check a input is vowel or consonant ?
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Enter you character :");
+    scanf("%c",&a);
+    if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+    {
+        printf("character is Vowel");
+    }
+    else
+    {
+        printf("character is consonant");
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------------------
+Q.24:write a c program input character when user input p , e , a , k peak word other wise input is not valid ?
+sol:#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Enter you character :");
+    scanf("%c",&a);
+    if(a=='p'||a=='e'||a=='a'||a=='k')
+    {
+        printf("Peak");
+    }
+    else
+    {
+        printf("Input not valid");
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------
+Q.25:write a c program input character when user input q,w,e,r,t,y,u,i,o,p upper line other wise input is not valid?
+sol:
+#include<stdio.h>
+int main()
+{ 
+     char a;
+    printf("Enter your character :");
+    scanf("%c",&a);
+    if(a=='q'||a=='w'||a=='e'||a=='r'||a=='t'||a=='y'||a=='u'||a=='i'||a=='o'||a=='p')
+    {
+        printf("Upper Line ");
+    }
+    else
+    {
+        printf("Input not valid");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------
+Q.26:write a c program input number when user input a number 1 then print one other wise input is not valid ?
+sol:
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter your Number :");
+    scanf("%d",&num);
+    if(num==1)
+    {
+        printf("Your number is 1");
+    
+    }
+    else
+    {
+        printf("Input is invalid");
+    }
+    
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
