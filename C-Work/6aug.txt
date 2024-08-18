@@ -711,3 +711,160 @@ Input the marks of Physics, Chemistry and Computer Application : 70 80 90
 total: 
 precentage : % 
 division:
+sol:
+#include <stdio.h>
+
+int main() {
+    int rollNo;
+    char name[50], fname[50], mname[50], address[100], contact[20];
+    float physics, chemistry, computerApp, total, percentage;
+
+    printf("Input the Roll Number of the student: ");
+    scanf("%d", &rollNo);
+
+    printf("Student name: ");
+    scanf("%s", name);
+
+    printf("Father's name: ");
+    scanf("%s", fname);
+
+    printf("Mother's name: ");
+    scanf("%s", mname);
+
+    printf("Address: ");
+    scanf("%s", address);
+
+    printf("Contact: ");
+    scanf("%s", contact);
+
+    printf("Input the marks of Physics, Chemistry and Computer Application: ");
+    scanf("%f %f %f", &physics, &chemistry, &computerApp);
+
+    total = physics + chemistry + computerApp;
+    percentage = (total / 300.0) * 100.0;
+
+    printf("Total: %.2f\n", total);
+    printf("Percentage: %.2f%%\n", percentage);
+
+    if(percentage >= 60)
+        printf("Division: First\n");
+    else if(percentage >= 45)
+        printf("Division: Second\n");
+    else if(percentage >= 33)
+        printf("Division: Third\n");
+    else
+        printf("Division: Fail\n");
+
+    return 0;
+}
+---------------------------------------------------------------------------
+Q.18:salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+Sol:
+#include <stdio.h>
+
+int main() {
+    char name[50], address[100], bankDetails[100];
+    float salary, alot;
+    int holidays;
+
+    printf("Name: ");
+    scanf("%s", name);
+
+    printf("Address: ");
+    scanf("%s", address);
+
+    printf("Bank Details: ");
+    scanf("%s", bankDetails);
+
+    printf("Salary: ");
+    scanf("%f", &salary);
+
+    printf("Holidays: ");
+    scanf("%d", &holidays);
+
+    if(holidays == 1) {
+        alot = salary;
+    } else if(holidays >= 2 && holidays <= 5) {
+        alot = salary * 0.05;
+    } else if(holidays >= 6 && holidays <= 14) {
+        alot = salary * 0.10;
+    } else if(holidays == 15) {
+        alot = salary * 0.50;
+    } else {
+        alot = 0;
+    }
+
+    printf("Name: %s\n", name);
+    printf("Address: %s\n", address);
+    printf("Bank Details: %s\n", bankDetails);
+    printf("Salary: %.2f\n", salary);
+    printf("Alot: %.2f\n", alot);
+    printf("Holidays: %d\n", holidays);
+
+    return 0;
+}
+--------------------------------------------------------------------------------
+Q.19:electric city bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+
+output : 
+name:
+unit :3 
+amout 30 
+discout : 10% 
+total pay amount : 
+sol:
+{
+    char name[50];
+    int unit;
+    float amount, discount, total;
+
+    printf("Name: ");
+    scanf("%s", name);
+
+    printf("Unit: ");
+    scanf("%d", &unit);
+
+    if(unit <= 10) {
+        amount = unit * 4;
+        discount = amount * 0.10;
+    } else if(unit <= 20) {
+        amount = unit * 4;
+        discount = amount * 0.15;
+    } else if(unit <= 40) {
+        amount = unit * 4;
+        discount = amount * 0.30;
+    } else {
+        amount = unit * 4;
+        discount = amount * 0.50;
+    }
+
+    total = amount - discount;
+
+    printf("Name: %s\n", name);
+    printf("Unit: %d\n", unit);
+    printf("Amount: %.2f\n", amount);
+    printf("Discount: %.2f%%\n", (discount / amount) * 100);
+    printf("Total Pay Amount: %.2f\n", total);
+
+    return 0;
+}
+------------------------------------------------------------------------
