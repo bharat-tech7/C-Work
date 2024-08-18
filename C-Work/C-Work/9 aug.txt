@@ -1,0 +1,239 @@
+Q.1:1-->10 addition 
+sol:
+#include<stdio.h>
+int main()
+{
+    int n;
+    int sum=0;
+    while(n<=10)
+    {
+        
+        sum=(n+sum);
+        n++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+-------------------------------------------------------------
+Q.2:count of the digit in c :342484 
+sol:
+#include<stdio.h>
+int main()
+{
+    int n=342484;
+    int count=0;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+    printf("%d",count);
+    return 0;
+}
+----------------------------------------------------------------
+Q.3:reverse digit :4456
+sol:#include<stdio.h>
+int main()
+{
+    int n=4456;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+------------------------------------------------------------------
+palindrome number:
+sol:#include<stdio.h>
+int main()
+{
+    int n=4554;
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is polidrone");
+    }
+    else
+    {
+        printf("number is not polidrone");
+    }
+    return 0;
+}
+----------------------------------------------------------------------
+Armstrong number:
+sol:
+#include<stdio.h>
+int main()
+{
+    int n=153;
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem*rem*rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is armstrome");
+    }
+    else
+    {
+        printf("number is not  armstrome");
+    }
+    return 0;
+}
+--------------------------------------------------------------------------
+Neon number:
+sol:
+#include<stdio.h>
+int main()
+{
+    int n=9;
+    int sum=0;
+    int sq,rem;
+    sq=n*n;
+    while(sq!=0)
+    {
+        rem=sq%10;
+        sum=sum+rem;
+        sq=sq/10;
+    }
+    if(n==sum)
+    {
+    printf("neon");
+    }
+    else
+    {
+        printf("not neon");
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------
+Q.4:sum of digit :434 : 4+3+4 =>11
+sol:
+#include<stdio.h>// sum of digit :
+int main()// 434 : 4+3+4 =>11
+{
+    int n=434;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+---------------------------------------------------------------------------------------------
+Q.5:a :Armstrong number check 
+
+p :palindrome number check 
+
+r :number reverse 
+
+s :sum of digit
+sol:
+#include<stdio.h>
+int main()
+{
+    char letter;
+    printf("Enter your letter :");
+    scanf("%c",&letter);
+    if(letter=='a')
+    {
+        int n;
+        printf("Enter your number :");
+        scanf("%d",&n);
+        int temp=n;
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum+rem*rem*rem;
+            n=n/10;
+        }
+        if(temp=sum)
+        {
+            printf("armstrome number");
+        }
+        else 
+        {
+            printf("not armstrome number");
+        }
+    }
+    else if(letter=='p')
+    {
+        int n;
+        printf("enter your number :");
+        scanf("%d",&n);
+        int temp=n;
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum*10+rem;
+            n=n/10;
+        }
+        if(temp=sum)
+        {
+            printf("polidrome number");
+        }
+        else
+        {
+            printf("not polidrome number");
+        }
+    }
+    else if(letter=='r')
+    {
+        int n;
+        printf("Enter your number :");
+        scanf("%d",&n);
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum*10+rem;
+            n=n/10;
+        }
+        printf("%d",sum);
+    }
+    else if(letter=='s')
+    {
+        int n;
+        printf("enter your number :");
+        scanf("%d",&n);
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+           n=n/10;
+            
+        }
+        printf("%d",sum);
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------

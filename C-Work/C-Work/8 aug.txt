@@ -1,0 +1,816 @@
+Q.1 Write a c program for finding maximum value number with 2 numbers?
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    int b;
+    printf("Enter first number :");
+    scanf("%d",&a);
+    printf("Enter second number :");
+    scanf("%d",&b);
+    if(a<b)
+    {
+        printf("b is greater than a");
+        
+    }
+    else if (a>b)
+    {
+        printf("a is greater than b");
+    }
+    return 0;
+}
+---------------------------------------------------------------------
+Q.2:Write a c program for finding maximum value number with 3 numbers?
+sol:
+#include<stdio.h>
+int main()
+{
+    int a;
+    int b;
+    int c;
+    printf("Enter first number :");
+    scanf("%d",&a);
+    printf("Enter second number :");
+    scanf("%d",&b);
+    printf("Enter third number");
+    scanf("%d",&c);
+    if(a<b&&b>c)
+    {
+        printf("b is greater ");
+        
+    }
+    else if (a>b&&a>c)
+    {
+        printf("a is greater ");
+    }
+    else if (b<c&&c>a)
+    {
+        printf("c is greater");
+    }
+    return 0;
+}
+---------------------------------------------------------------------------
+Q.3:e :
+	even number check 
+
+v :
+	check voter id valid or not 
+
+s :
+	seasons 
+
+m :
+	marksheet 
+
+k :
+	keyboard 
+
+c :
+	vowel and consonant 
+
+input is not valid 
+
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Enter your character :");
+    scanf("%c",&a);
+    if(a=='e')
+    {
+        int num;
+        printf("Enter your number :");
+        scanf("%d",&num);
+        if(num%2==0)
+        {
+            printf("Even");
+        }
+        else
+        {
+            printf("Odd");
+        }
+    }
+        else if(a=='v')
+        {
+            int age;
+            printf("Enter Your Age");
+            scanf("%d",&age);
+            if(age>=18)
+            {
+                printf("Your Voter id Valid");
+            }
+            else
+            {
+                printf(" Voter Id Invalid");
+            }
+        }
+        else if(a=='s')
+        {
+             int season;
+             printf("Enter season");
+             scanf("%d",&season);
+             if(season==1)
+             {
+                 printf("Summer");
+             }
+             else if(season==2)
+             {
+                 printf("Autunm");
+             }
+             else if(season==3)
+             {
+                 printf("Winter");
+             }
+             else if(season==4)
+            {
+                printf("Spring");
+            }   
+    
+            else if
+            {
+                printf("Invalid value");
+            }
+
+        }
+        else if(a=='k')
+        {
+             char line;
+             printf("enter your charcter");
+            scanf("%c",&line);
+       if(line=='q')
+     {
+        printf("Upper Line");
+     }
+        else if(line=='w')
+     {
+        printf("Upper Line");
+    }
+    else if(line=='e')
+    {
+        printf("Upper Line");
+    }
+    else if(line=='r')
+    {
+        printf("Upper Line");
+    }
+    else if(line=='t')
+    {
+        printf("Upper Line");
+    }  
+    else if(line=='y')
+    {
+        printf("Upper Line");
+    }  
+    else if(line=='u')
+    {
+        printf("Upper Line");
+    }  
+    else if(line=='i')
+    {
+        printf("Upper Line");
+    }  
+    else if(line=='o')
+    {
+        printf("Upper Line");
+    }
+    else if(line=='p')
+    {
+        printf("Upper Line");
+    }
+    else if(line=='a')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='s')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='d')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='f')
+    {
+        printf("Middle Line");
+    }
+        else if(line=='g')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='h')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='j')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='k')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='l')
+    {
+        printf("Middle Line");
+    }
+    else if(line=='z')
+    {
+        printf("Lower Line");
+    }
+     else if(line=='x')
+    {
+        printf("Lower Line");
+    }
+     else if(line=='c')
+    {
+        printf("Lower Line");
+    }
+     else if(line=='v')
+    {
+        printf("Lower Line");
+    }
+     else if(line=='b')
+    {
+        printf("Lower Line");
+    }
+     else if(line=='n')
+    {
+        printf("Lower Line");
+    }
+     else if(line=='m')
+    {
+        printf("Lower Line");
+    }
+    
+            }
+ else if(a='c')
+        {
+            char letter;
+            printf("Enter your letter");
+            scanf("%c", letter);
+            if(letter=='a'||letter=='e'||letter=='i'||letter=='o'||letter=='u')
+            {
+                printf("Vowel");
+                
+            }
+            else
+            {
+                printf("Consounnent");
+            }
+
+
+
+
+    return 0;    
+}
+--------------------------------------------------------------------------------------------------------------------
+Q.4:s :
+	w :with third variable number swap 
+	o :without third variable number swap 
+
+input is not valid 
+
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("enter your charcter");
+    scanf("%c",&a);
+    if(a=='s')
+    {
+        char b;
+    
+      scanf  ("%c",&b);
+        if(b=='w')
+        {
+             int a=15;
+             int b=60;
+             int c;
+            printf("The value of a :%d\n",a);
+            printf("The value if b :%d\n",b);
+                c=b;
+                b=a;
+                a=c;
+            printf("The swap value of a :%d\n",a);
+            printf("The swap value of b :%d",b);
+            
+
+        }
+        else if(b=='o')
+        {
+            int a=15;
+    int b=60;
+    printf("The value of a :%d\n",a);
+    printf("The value if b :%d\n",b);
+    b=a+b;
+    a=b-a;
+    b=b-a;
+    printf("The swap value of a :%d\n",a);
+    printf("The swap value of b :%d",b);
+        }
+        else
+        {
+            printf("input not valid");
+        }
+       
+    }
+    
+    return 0;
+}
+----------------------------------------------------------------------------------------
+Q.5:1--->10 number print
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    while(a<=10){
+    printf("%d\n",a);
+        
+    a++;
+    }
+       return 0;
+}
+:1---100
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    while(a<=100){
+    printf("%d\n",a);
+        
+    a++;
+    }
+       return 0;
+}
+:50--->100
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=50;
+    while(a<=100){
+    printf("%d\n",a);
+        
+    a++;
+    }
+       return 0;
+}
+:45-->89
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=45;
+    while(a<=89){
+    printf("%d\n",a);
+        
+    a++;
+    }
+       return 0;
+}
+:10-->1:
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    while(a>=1){
+    printf("%d\n",a);
+        
+    a--;
+    }
+       return 0;
+}
+:100--->1 
+sol:#include<stdio.h>
+int main()
+{
+    int a=100;
+    while(a>=1){
+    printf("%d\n",a);
+        
+    a--;
+    }
+       return 0;
+}
+
+:100-->50
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=100;
+    while(a>=50){
+    printf("%d\n",a);
+        
+    a--;
+    }
+       return 0;
+}
+
+:89----->45 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=89;
+    while(a>=45){
+    printf("%d\n",a);
+        
+    a--;
+    }
+       return 0;
+}
+-----------------------------------------------------------------------------------
+Q.6:even number 
+1--->10 number print (dry run)
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    
+    while(a<=10){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+}
+:1----->100 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    
+    while(a<=100){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+
+50--->100
+#include<stdio.h>
+int main()
+{
+    int a=50;
+    
+    while(a<=100){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+
+
+45---->89 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=45;
+    
+    while(a<=89){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+
+
+
+10--->1 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    
+    while(a>=1){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+
+
+100--->1 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=100;
+    
+    while(a>=1){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+
+
+
+100-->50
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    
+    while(a>=50){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+
+
+
+89----->45 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=89;
+    
+    while(a>=45){
+        if(a%2==0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+----------------------------------------------------------------------------------
+Q.7 odd number
+1--->10 number print 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    
+    while(a<=10){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+}
+1----->100 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    
+    while(a<=100){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+}
+
+50--->100
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=50;
+    
+    while(a<=100){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+}
+
+45---->89 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=45;
+    
+    while(a<=89){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a++;
+    }
+       return 0;
+}
+
+
+10--->1 (dry run)
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    
+    while(a>=1){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+
+100--->1 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=100;
+    
+    while(a>=1){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+
+
+100-->50
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    
+    while(a>=50){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+
+
+
+
+89----->45 
+sol:
+#include<stdio.h>
+int main()
+{
+    int a=89;
+    
+    while(a>=45){
+        if(a%2!=0)
+        {
+            printf("%d",a);
+        }
+
+        
+    a--;
+    }
+       return 0;
+-----------------------------------------------------------------------------------------------
+Q.8a :
+	1--->10 number print 
+
+b :
+	56--->34 number print 
+
+c :
+	1---->100 even number 
+
+d :
+	87----->32 odd number 
+
+input is not valid 
+sol:
+// // a :
+// 	1--->10 number print 
+
+// b :
+// 	56--->34 number print 
+
+// c :
+// 	1---->100 even number 
+
+// d :
+// 	87----->32 odd number 
+
+// input is not valid 
+#include<stdio.h>
+int main()
+{
+    char e;
+    printf("enter your charcter");
+    scanf("%c",&e);
+    if(e=='a')
+    {
+        int a=1;
+        while(a<=10)
+        {
+            printf("%d\n",a);
+            a++;
+        }
+        
+    
+    }
+    else if(e=='b')
+    {
+         int a=56;
+        while(a>=34)
+        {
+            printf("%d\n",a);
+            a--;
+        }
+    }
+    else if(e=='c')
+    {
+         int a=1;
+        while(a<=100)
+        {
+            printf("%d\n",a);
+            a++;
+        }
+    }
+    else if(e=='d')
+    {
+         int a=87;
+        while(a>=32)
+        {
+            printf("%d\n",a);
+            a--;
+        }
+    }
+	else
+{
+printf("Invaild");
+}
+    return 0;
+}
+
+
+
+
+
