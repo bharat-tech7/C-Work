@@ -1,0 +1,468 @@
+Q.1:
+sol:
+#include<stdio.h>
+int main() 
+{
+    
+    for(int i=1;i<=5;i++)
+    { 
+        for(int j=1;j<=i;j++)
+        {
+        printf("*");
+        }
+    printf("\n");
+    } 
+    return 0;
+	}
+----------------------------------------------------
+Q.2:
+*****
+****
+***
+**
+*
+sol:
+#include<stdio.h>
+int main() 
+{
+    
+    for(int i=1;i<=5;i++)
+    { 
+        for(int j=5;j>=i;j--)
+        {
+        printf("*");
+        }
+    printf("\n");
+    } 
+    return 0;}
+
+ ----------------------------------------------------------------
+Q.3:
+    *
+   **
+  ***
+ ****
+*****
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+------------------------------------------------------------------------
+Q.4:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------
+Q.5:
+    *
+   **
+  ***
+ ****
+*****
+*****
+ ****
+  ***
+   **
+    *
+sol:
+#include<stdio.h>
+int main()
+{  
+     for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+------------------------------------------------------------
+Q.6:
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+sol:
+#include<stdio.h>
+int main()
+{  
+     for(int i=1;i<=4;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+----------------------------------------------------------------
+Q.7:
+*****
+ ****
+  ***
+   **
+    *
+    *
+   **
+  ***
+ ****
+*****
+sol:
+#include<stdio.h>
+int main()
+{  
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+     for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+----------------------------------------------------------------------
+Q.8:
+sol:
+#include<stdio.h>
+int main()
+{  
+    for(int i=1;i<=4;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+     for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+------------------------------------------------------------------
+Q.9:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+return 0;
+}
+--------------------------------------------------------------------
+Q.10:
+sol:
+#include<stdio.h>
+int main()
+{  
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+   
+    return 0;
+}
+---------------------------------------------------------------------------
+Q.11:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+     for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+    
+}
+----------------------------------------------------------------------
+Q.12:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=4;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+     for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+    
+}
+-----------------------------------------------------------------------
+Q.13:
+sol:
+#include<stdio.h>
+int main()
+{
+     for(int i=1;i<=5;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+    ------------------------------------------------------------------
+Q.14:
+sol:
+#include<stdio.h>
+int main()
+{
+     for(int i=1;i<=4;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(int j=5;j>=i;j--)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=5;i++)
+    {
+        for(int s=5;s>=i;s--)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+    
+}
+------------------------------------------------------------------------
+Q.15:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=4;i++)
+    {
+        for(int j=1;j<=5;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+    
+}
+---------------------------------------------------------------------------
+Q.16:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=4;i++)
+    {
+      
+            for(int n=1;n<=5;n++)
+            {
+                printf("%d",n);
+            }
+        
+        printf("\n");
+    }
+    return 0;
+    
+}
+------------------------------------------------------------------------
+Q.17:
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {   
+        for(int j=1;j<=4;j++)
+      
+            printf("%d",i);
+        
+        printf("\n");
+    }
+    return 0;
+    
+}
+----------------------------------------------------------------------------
+Q.18:
+sol:
+
