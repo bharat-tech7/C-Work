@@ -1,0 +1,663 @@
+#include <stdio.h>
+
+#include <math.h>
+
+
+
+int addition(int a, int b) { return a + b; }
+
+int subtraction(int a, int b) { return a - b; }
+
+int multiplication(int a, int b) { return a * b; }
+
+int division(int a, int b) { return (b != 0) ? a / b : 0; }
+
+
+
+void swap(int a, int b) {
+
+    int temp = a;
+
+    a = b;
+
+    b = temp;
+
+    printf("After swap: %d %d\n", a, b);
+
+}
+
+
+
+void wswap(int a, int b) {
+
+    a = a + b;
+
+    b = a - b;
+
+    a = a - b;
+
+    printf("After swap: %d %d\n", a, b);
+
+}
+
+
+
+int isArmstrong(int num) {
+
+    int original = num, sum = 0, digit, n = 0;
+
+    while (num != 0) {
+
+        n++;
+
+        num /= 10;
+
+    }
+
+    num = original;
+
+    while (num != 0) {
+
+        digit = num % 10;
+
+        sum += pow(digit, n);
+
+        num /= 10;
+
+    }
+
+    return (sum == original);
+
+}
+
+
+
+int isPalindrome(int num) {
+
+    int reversed = 0, original = num;
+
+    while (num != 0) {
+
+        reversed = reversed * 10 + num % 10;
+
+        num /= 10;
+
+    }
+
+    return (original == reversed);
+
+}
+
+
+
+int isEven(int num) {
+
+    return (num % 2 == 0);
+
+}
+
+
+
+int reverseNumber(int num) {
+
+    int reversed = 0;
+
+    while (num != 0) {
+
+        reversed = reversed * 10 + num % 10;
+
+        num /= 10;
+
+    }
+
+    return reversed;
+
+}
+
+
+
+int countDigits(int num) {
+
+    int count = 0;
+
+    while (num != 0) {
+
+        count++;
+
+        num /= 10;
+
+    }
+
+    return count;
+
+}
+
+
+
+int sumOfDigits(int num) {
+
+    int sum = 0;
+
+    while (num != 0) {
+
+        sum += num % 10;
+
+        num /= 10;
+
+    }
+
+    return sum;
+
+}
+
+
+
+int factorial(int n) {
+
+    if (n == 0 || n == 1) return 1;
+
+    return n * factorial(n - 1);
+
+}
+
+
+
+void fibonacci(int n) {
+
+    int a = 0, b = 1, next;
+
+    printf("Fibonacci Series: ");
+
+    for (int i = 0; i < n; i++) {
+
+        printf("%d ", a);
+
+        next = a + b;
+
+        a = b;
+
+        b = next;
+
+    }
+
+    printf("\n");
+
+}
+
+
+
+int main() {
+
+    int choice, num1, num2;
+
+
+
+    while (1) {
+
+        printf("\nMenu:\n");
+
+        printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
+
+        printf("5. Swap (with third variable)\n6. Swap (without third
+variable)\n");
+
+        printf("7. Check Armstrong number\n8. Check Palindrome number\n");
+
+        printf("9. Check Even number\n10. Reverse number\n11. Count digits\n");
+
+        printf("12. Sum of digits\n13. Factorial\n14. Fibonacci\n");
+
+        printf("0. Exit\n");
+
+        printf("Enter your choice: ");
+
+        scanf("%d", &choice);
+
+
+
+        if (choice == 0) return 0;
+
+
+
+        if (choice >= 1 && choice <= 4) {
+
+            printf("Enter two numbers: ");
+
+            scanf("%d %d", &num1, &num2);
+
+            int result;
+
+            if (choice == 1) result = addition(num1, num2);
+
+            if (choice == 2) result = subtraction(num1, num2);
+
+            if (choice == 3) result = multiplication(num1, num2);
+
+            if (choice == 4) result = division(num1, num2);
+
+            printf("Result: %d\n", result);
+
+        }
+
+
+
+        if (choice == 5 || choice == 6) {
+
+            printf("Enter two numbers: ");
+
+            scanf("%d %d", &num1, &num2);
+
+            printf("Before swap: %d %d\n", num1, num2);
+
+            if (choice == 5) swap(num1, num2);
+
+            if (choice == 6) wswap(num1, num2);
+
+        }
+
+
+
+        if (choice >= 7 && choice <= 12) {
+
+            printf("Enter a number: ");
+
+            scanf("%d", &num1);
+
+            if (choice == 7) printf("%d is %san Armstrong number.\n",
+num1, isArmstrong(num1) ? "" : "not ");
+
+            if (choice == 8) printf("%d is %sa Palindrome number.\n",
+num1, isPalindrome(num1) ? "" : "not ");
+
+            if (choice == 9) printf("%d is %san Even number.\n", num1,
+isEven(num1) ? "" : "not ");
+
+            if (choice == 10) printf("Reversed number: %d\n",
+reverseNumber(num1));
+
+            if (choice == 11) printf("Number of digits: %d\n",
+countDigits(num1));
+
+            if (choice == 12) printf("Sum of digits: %d\n", sumOfDigits(num1));
+
+        }
+
+
+
+        if (choice == 13) {
+
+            printf("Enter a number: ");
+
+            scanf("%d", &num1);
+
+            printf("Factorial: %d\n", factorial(num1));
+
+        }
+
+
+
+        if (choice == 14) {
+
+            printf("Enter the number of terms: ");
+
+            scanf("%d", &num1);
+
+            fibonacci(num1);
+
+        }
+
+
+
+        if (choice < 0 || choice > 14) {
+
+            printf("Invalid choice. Please try again.\n");
+
+        }
+
+    }
+
+
+
+    return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+#include <math.h>
+
+
+
+int num1, num2;
+
+
+
+int addition() {
+
+    return num1 + num2;
+
+}
+
+
+
+int subtraction() {
+
+    return num1 - num2;
+
+}
+
+
+
+int multiplication() {
+
+    return num1 * num2;
+
+}
+
+
+
+int division() {
+
+    return (num2 != 0) ? num1 / num2 : 0;
+
+}
+
+
+
+void swap() {
+
+    int temp = num1;
+
+    num1 = num2;
+
+    num2 = temp;
+
+}
+
+
+
+void wswap() {
+
+    num1 = num1 + num2;
+
+    num2 = num1 - num2;
+
+    num1 = num1 - num2;
+
+}
+
+
+
+int a() {
+
+    int original = num1, sum = 0, digit, n = 0;
+
+    while (original != 0) {
+
+        n++;
+
+        original /= 10;
+
+    }
+
+    original = num1;
+
+    while (original != 0) {
+
+        digit = original % 10;
+
+        sum += pow(digit, n);
+
+        original /= 10;
+
+    }
+
+    return (sum == num1);
+
+}
+
+
+
+int p() {
+
+    int reversed = 0, original = num1;
+
+    while (original != 0) {
+
+        reversed = reversed * 10 + original % 10;
+
+        original /= 10;
+
+    }
+
+    return (num1 == reversed);
+
+}
+
+
+
+int e() {
+
+    return (num1 % 2 == 0);
+
+}
+
+
+
+int r() {
+
+    int reversed = 0, original = num1;
+
+    while (original != 0) {
+
+        reversed = reversed * 10 + original % 10;
+
+        original /= 10;
+
+    }
+
+    return reversed;
+
+}
+
+
+
+int c() {
+
+    int count = 0, original = num1;
+
+    while (original != 0) {
+
+        count++;
+
+        original /= 10;
+
+    }
+
+    return count;
+
+}
+
+
+
+int s() {
+
+    int sum = 0, original = num1;
+
+    while (original != 0) {
+
+        sum += original % 10;
+
+        original /= 10;
+
+    }
+
+    return sum;
+
+}
+
+
+
+int f() {
+
+    if (num1 == 0 || num1 == 1) return 1;
+
+    int result = 1;
+
+    for (int i = 2; i <= num1; i++) {
+
+        result *= i;
+
+    }
+
+    return result;
+
+}
+
+
+
+void g() {
+
+    int a = 0, b = 1, next;
+
+    printf("Fibonacci Series: ");
+
+    for (int i = 0; i < num1; i++) {
+
+        printf("%d ", a);
+
+        next = a + b;
+
+        a = b;
+
+        b = next;
+
+    }
+
+    printf("\n");
+
+}
+
+
+
+int main() {
+
+    char choice;
+
+
+
+    while (1) {
+
+        printf("\nMenu:\n");
+
+        printf("+: Addition\n-: Subtraction\n*: Multiplication\n/: Division\n");
+
+        printf("s: Swap (with third variable)\nw: Swap (without third
+variable)\n");
+
+        printf("a: Check Armstrong number\np: Check Palindrome number\n");
+
+        printf("e: Check Even number\nr: Reverse number\nc: Count digits\n");
+
+        printf("d: Sum of digits\nf: Factorial\ng: Fibonacci\n");
+
+        printf("q: Quit\n");
+
+        printf("Enter your choice: ");
+
+        scanf(" %c", &choice);
+
+
+
+        if (choice == 'q') break;
+
+
+
+        if (choice == '+' || choice == '-' || choice == '*' || choice == '/' ||
+
+            choice == 's' || choice == 'w') {
+
+            printf("Enter two numbers: ");
+
+            scanf("%d %d", &num1, &num2);
+
+        } else if (choice != 'q') {
+
+            printf("Enter a number: ");
+
+            scanf("%d", &num1);
+
+        }
+
+
+
+        if (choice == '+') printf("Result: %d\n", addition());
+
+        if (choice == '-') printf("Result: %d\n", subtraction());
+
+        if (choice == '*') printf("Result: %d\n", multiplication());
+
+        if (choice == '/') printf("Result: %d\n", division());
+
+        if (choice == 's') {
+
+            printf("Before swap: %d %d\n", num1, num2);
+
+            swap();
+
+            printf("After swap: %d %d\n", num1, num2);
+
+        }
+
+        if (choice == 'w') {
+
+            printf("Before swap: %d %d\n", num1, num2);
+
+            wswap();
+
+            printf("After swap: %d %d\n", num1, num2);
+
+        }
+
+        if (choice == 'a') printf("%d is %san Armstrong number.\n",
+num1, a() ? "" : "not ");
+
+        if (choice == 'p') printf("%d is %sa Palindrome number.\n",
+num1, p() ? "" : "not ");
+
+        if (choice == 'e') printf("%d is %san Even number.\n", num1,
+e() ? "" : "not ");
+
+        if (choice == 'r') printf("Reversed number: %d\n", r());
+
+        if (choice == 'c') printf("Number of digits: %d\n", c());
+
+        if (choice == 'd') printf("Sum of digits: %d\n", s());
+
+        if (choice == 'f') printf("Factorial: %d\n", f());
+
+        if (choice == 'g') g();
+
+    }
+
+
+
+    return 0;
+
+}

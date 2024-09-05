@@ -1,0 +1,278 @@
+1)
+Write a C program to input marks of five subjects Physics, Chemistry, Biology,
+Mathematics and Computer. Calculate percentage and grade according to
+following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+sol:
+#include<stdio.h>
+int main()
+{
+    int mathamatic,chemistry,computer,biology,physics;
+    printf("Enter the marks of mathamatic :");
+    scanf("%d",&mathamatic);
+    printf("Enter the marks of chemistry :");
+    scanf("%d",&chemistry);
+    printf("Enter the marks of Computer :");
+    scanf("%d",&computer);
+    printf("Enter the marks of biology :");
+    scanf("%d",&biology);
+    printf("Enter the marks of physics :");
+    scanf("%d",&physics);
+    printf("The marks of mathamatic :%d\n",mathamatic);
+    printf("The marks of chemistry :%d\n",chemistry);
+    printf("The marks of computer :%d\n",computer);
+    printf("The marks of biology :%d\n",biology);
+    printf("The marks of physics :%d\n",physics);
+   int total;
+   total=mathamatic+chemistry+computer+physics+biology;
+   printf(" The total maarks is:%d\n",total);
+   float per;
+   per=(total/500.0)*100;
+   printf("The percentage is : %f\n",per);
+   if(per>=90)
+   {
+       printf("Grade A");
+   }
+   else if(per>=80)
+   {
+       printf("Grade B");
+   }
+   else if(per>=70)
+   {
+       printf("Grade C");
+   }
+   else if(per>=60)
+   {
+       printf("Grade D");
+   }
+   else if(per>=40)
+   {
+       printf("Grade E");
+   }
+   else if(per<=30)
+   {
+       printf("Grade F");
+   }
+    
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+2)
+Write a C program to check whether a number is negative, positive or zero.
+sol:
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter Number :");
+    scanf("%d",&num);
+    if(num<=0)
+    {
+        printf("Number is Negitive");
+    }
+    else if(num>=0)
+    {
+        printf("Number is Positive");
+    }
+    else
+    {
+        printf("Zero");
+    }
+    return 0;
+    
+}
+---------------------------------------------------------
+3)
+Write a C program to find maximum between three numbers
+sol:
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter First Number :");
+    scanf("%d",&a);
+    printf("Enter Second Number :");
+    scanf("%d",&b);
+    printf("Enter Third Number :");
+    scanf("%d",&c);
+    if(a>b&&a>c)
+    {
+        printf("First Number is Greater");
+    }
+    else if(b>a&&b>c)
+    {
+        printf("Second Number is Greater");
+    }
+    else if(c>a&&c>b)
+    {
+        printf("Third Number is Greater");
+    }
+    return 0;
+}
+----------------------------------------------------------
+
+4)
+
+Write a C program to input basic salary of an employee and calculate its Gross
+salary according to following:
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+-------------------------------------------------------------------------------------
+5)
+*   *
+ * * 
+  *  
+ * * 
+*   *
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        for(int j=1;j<=5;j++)
+        {
+            if(j==i||i+j==6)
+            {
+                printf(" *");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+        
+    }
+    return 0;
+}
+
+------------------------------
+
+
+6)
+a :
+	check Armstrong number 
+
+p :
+	check palindrome number 
+
+e :
+	check even number 
+
+r :
+	reverse number check 
+c :
+	count digit 
+
+s :
+	sum of digit 
+
+f :
+	factorial 
+
+g :
+	Fibonacci
+sol:
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Enter a single charcter");
+    scanf("%c",&a);
+    if(a=='a')
+    {
+        //armstrome number
+         int n;
+         printf("Enter Your Number");
+         scanf("%d",&n);
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem*rem*rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is armstrome");
+    }
+    else
+    {
+        printf("number is not  armstrome");
+    }
+
+    
+    }
+    else if(a=='p')
+    {
+         int n;
+         printf("Enter Your Number");
+         scanf("%d",&n);
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+10*rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is Polidrome");
+    }
+    else
+    {
+        printf("number is not Polidrome");
+    }
+
+    }
+    else if(a=='e')
+    {
+        int n;
+         printf("Enter Your Number");
+         scanf("%d",&n);
+         if(n%2==0)
+         {
+             printf("Even");
+         }
+         else
+         {
+             printf("Not");
+         }
+    }
+         else if(a=='r')
+         {
+              int n;
+         printf("Enter Your Number");
+         scanf("%d",&n);
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+         }
+  
+
+         
+    return 0;
+}
+
+

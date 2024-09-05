@@ -1,0 +1,405 @@
+Q.1:
+sol:
+#include<stdio.h>
+void print();
+int main()
+{
+    print();
+    return 0;
+}
+void print()
+{
+    printf("Hello World");
+}
+------------------------------------------
+Q.2:
+Addition:
+sol:
+#include<stdio.h>
+void add();
+int main()
+{ 
+    add();
+    return 0;
+}
+void add()
+{
+    int a,b,c;
+    printf("Enter the value of a & b :");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("%d",c);
+}
+-----------------------------
+subtraction:
+#include<stdio.h>
+void sub();
+int main()
+{ 
+    sub();
+    return 0;
+}
+void sub()
+{
+    int a,b,c;
+    printf("Enter the value of a & b :");
+    scanf("%d %d",&a,&b);
+    c=a-b;
+    printf("%d",c);
+}
+--------------------------------------------
+Multiplication:
+#include<stdio.h>
+void multi();
+int main()
+{ 
+    multi();
+    return 0;
+}
+void multi()
+{
+    int a,b,c;
+    printf("Enter the value of a & b :");
+    scanf("%d %d",&a,&b);
+    c=a*b;
+    printf("%d",c);
+}
+------------------------------------------
+Division:
+#include<stdio.h>
+void divide();
+int main()
+{ 
+    divide();
+    return 0;
+}
+void divide()
+{
+    int a,b,c;
+    printf("Enter the value of a & b :");
+    scanf("%d %d",&a,&b);
+    c=a/b;
+    printf("%d",c);
+}
+--------------------------------------------------
+swap:with third variable:
+#include<stdio.h>
+void swap();
+int main()
+{ 
+    swap();
+    return 0;
+}
+void swap()
+{
+    int a,b,c;
+    printf("Enter the value of a & b :");
+    scanf("%d %d",&a,&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("a=%db=%d ",a,b);
+}
+---------------------------------------------------
+wswap:without third variable:
+#include<stdio.h>
+void swap();
+int main()
+{ 
+    swap();
+    return 0;
+}
+void swap()
+{
+    int a,b,c;
+    printf("Enter the value of a & b :");
+    scanf("%d %d",&a,&b);
+   a=a+b;
+   b=a-b;
+   a=a-b;
+    printf("a=%db=%d ",a,b);
+}
+----------------------------------------------------
+Q.2:
+a :
+	check Armstrong number 
+
+p :
+	check palindrome number 
+
+e :
+	check even number 
+
+r :
+	reverse number check 
+c :
+	count digit 
+
+s :
+	sum of digit 
+sol:
+// a :
+// 	check Armstrong number 
+
+// p :
+// 	check palindrome number 
+
+// e :
+// 	check even number 
+
+// r :
+// 	reverse number check 
+// c :
+// 	count digit 
+
+// s :
+// 	sum of digit 
+#include<stdio.h>
+void armstrome();
+void polindrome();
+void even();
+void reverse();
+void count();
+void sum();
+int main()
+{
+    char input;
+    printf("Enter a single charcter :");
+    scanf("%c",&input);
+    if(input=='a')
+    {
+       armstrome(); 
+    }
+    else if(input=='p')
+    {
+        polindrome();
+    }
+    else if(input=='e')
+    {
+        even();
+    }
+    else if(input=='r')
+    {
+        reverse();
+    }
+    else if(input=='c')
+    {
+        count();
+    }
+    else if(input=='s')
+    {
+        sum();
+    }
+    return 0;
+}
+void armstrome()
+{
+     int n;
+     printf("Enter your number :");
+     scanf("%d",&n);
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem*rem*rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is armstrome");
+    }
+    else
+    {
+        printf("number is not  armstrome");
+    }
+
+}
+void polindrome()
+{
+     int n;
+      printf("Enter your number :");
+     scanf("%d",&n);
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is polidrone");
+    }
+    else
+    {
+        printf("number is not polidrone");
+    }
+
+}
+void even()
+{
+     int n;
+      printf("Enter your number :");
+     scanf("%d",&n);
+     if(n%2==0)
+     {
+         printf("even");
+     }
+     else
+     {
+         printf("odd");
+     }
+}
+void reverse()
+{
+    int n;
+        printf("Enter your number :");
+        scanf("%d",&n);
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum*10+rem;
+            n=n/10;
+        }
+        printf("%d",sum);
+    
+
+}
+void count()
+{
+    int n;
+    n;
+        printf("Enter your number :");
+        scanf("%d",&n);
+    int count=0;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+    printf("%d",count);
+    
+
+}
+void sum()
+{
+      int n;
+        printf("Enter your number :");
+        scanf("%d",&n);
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+}
+
+-------------------------------------------------------------
+Q.3:Write a C program to find power of any number x ^ y
+sol:
+-----------------------------------------------------------------
+Q.4:Write a C program to check whether a number is negative, positive or zero.
+sol:
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("enter value of x");
+    scanf("%d",&x);
+  if(x<=0)
+  {
+      printf("Negative");
+  }
+  else if(x==0)
+  {
+      printf("zero");
+  }
+  else if(x>=0);
+  {
+      printf("Positive");
+  }
+  return 0;
+}
+-------------------------------------------------------------------
+Q.4:Write a C program to find first and last digit of a number
+sol:
+#include <stdio.h>
+
+int main() {
+    int num, first, last, temp;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+    last = num % 10;
+    while(temp >= 10)
+    {
+        temp = temp / 10;
+    }
+    first = temp;
+
+    printf("First digit: %d\n", first);
+    printf("Last digit: %d\n", last);
+
+    return 0;
+}
+-------------------------------------------------------
+Q.5:Write a C program to find sum of first and last digit of a number
+sol:
+#include <stdio.h>
+
+int main() {
+    int num, first, last, temp;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+    last = num % 10;
+    while(temp >= 10)
+    {
+        temp = temp / 10;
+    }
+    first = temp;
+
+    printf("First digit: %d\n", first);
+    printf("Last digit: %d\n", last);
+    int sum;
+    sum=first+last;
+    printf("sum=%d",sum);
+
+    return 0;
+}
+-----------------------------------------------------
+Q.6:Write a C program to calculate product of digits of a number
+sol:
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter your number ");
+    scanf("%d",&n);
+    int rem;
+    int product=1;
+    while(n>0)
+    {
+        rem=n%10;
+        product=product*rem;
+        n=n/10;
+    }
+    printf("%d",product);
+    return 0;
+}
+-----------------------------------------------
+
+

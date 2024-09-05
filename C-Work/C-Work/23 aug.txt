@@ -1,0 +1,384 @@
+no return and argument 
+
+-------------------------------------------------------------------------------
+addition:
+sol:
+#include<stdio.h>
+void add(int a,int b);
+int main()
+{
+    int num1,num2;
+    printf("enter numbers :");
+    scanf("%d %d",&num1,&num2);
+    add(num1,num2);
+    return 0;
+}
+void add(int a,int b)
+{
+    int c;
+    c=a+b;
+    printf("%d",c);
+}
+-----------------------------------------
+sub:
+sol:
+#include<stdio.h>
+void sub(int a,int b);
+int main()
+{
+    int num1,num2;
+    printf("enter numbers :");
+    scanf("%d %d",&num1,&num2);
+    sub(num1,num2);
+    return 0;
+}
+void sub(int a,int b)
+{
+    int c;
+    c=a-b;
+    printf("%d",c);
+}
+--------------------------------------------
+multi:
+sol:
+#include<stdio.h>
+void multi(int a,int b);
+int main()
+{
+    int num1,num2;
+    printf("enter numbers :");
+    scanf("%d %d",&num1,&num2);
+    multi(num1,num2);
+    return 0;
+}
+void multi(int a,int b)
+{
+    int c;
+    c=a*b;
+    printf("%d",c);
+}
+------------------------------------------------
+div :
+sol:
+#include<stdio.h>
+void div(int a,int b);
+int main()
+{
+    int num1,num2;
+    printf("enter numbers :");
+    scanf("%d %d",&num1,&num2);
+    div(num1,num2);
+    return 0;
+}
+void div(int a,int b)
+{
+    int c;
+    c=a/b;
+    printf("%d",c);
+}
+
+through function 
+-------------------------------------------------------------------------------
+
+swap()  :with third variable 
+sol:
+#include<stdio.h>
+void swap(int a,int b);
+int main()
+{
+    int num1,num2;
+    printf("enter numbers :");
+    scanf("%d %d",&num1,&num2);
+    swap(num1,num2);
+    return 0;
+}
+void swap(int a,int b)
+{
+    int c;
+    c=a;
+    a=b;
+    b=c;
+    printf(" a=%d",a);
+    printf("b=%d",b);
+}
+
+wswap() :without third variable
+sol:
+#include<stdio.h>
+void wswap(int a,int b);
+int main()
+{
+    int num1,num2;
+    printf("enter numbers :");
+    scanf("%d %d",&num1,&num2);
+    wswap(num1,num2);
+    return 0;
+}
+void wswap(int a,int b)
+{
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf(" a=%d",a);
+    printf("b=%d",b);
+}
+ 
+
+through function 
+-------------------------------------------------------------------------------
+a :
+	check Armstrong number 
+
+p :
+	check palindrome number 
+
+e :
+	check even number 
+
+r :
+	reverse number check 
+c :
+	count digit 
+
+s :
+	sum of digit 
+
+f :
+	factorial 
+
+g :
+	Fibonacci
+sol:
+#include<stdio.h>
+void arm(int n);
+void poli(int n);
+void even(int n);
+void rev(int n);
+void count(int n);
+void sum(int n);
+void fact(int n);
+void fib(int n);
+int main()
+{
+    char a;
+    printf("Enter your Charcter :");
+    scanf("%c",&a);
+    if(a=='a')
+    {
+        int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        arm(a);
+    }
+    else if(a=='p')
+    {
+       int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        poli(a);
+    }
+    else if(a=='e')
+    {
+        int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        even(a);
+    }
+    else if(a=='r')
+    {
+          int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        rev(a);
+    }
+    else if(a=='c')
+    {
+         int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        count(a);
+    }
+    else if(a=='s')
+    {
+         int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        sum(a);
+    }
+    else if(a=='f')
+    {
+        int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        fact(a);
+    }
+   else if(a=='g')
+    {
+          int a;
+        printf("enter your number :");
+        scanf("%d",&a);
+        fib(a);
+    }
+    return 0;
+}
+void arm( int n)
+{
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem*rem*rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is armstrome");
+    }
+    else
+    {
+        printf("number is not  armstrome");
+    }
+
+}
+void poli(int n)
+{
+      
+    int temp=n;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        printf("number is polidrone");
+    }
+    else
+    {
+        printf("number is not polidrone");
+    }
+
+}
+void even(int n)
+{
+    if(n%2==0)
+    {
+        printf("even");
+        
+    }
+    else
+    {
+        printf("odd");
+    }
+}
+void rev(int n)
+{
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+
+}
+void count(int n)
+{
+    int count=0;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+    printf("%d",count);
+
+}
+void sum(int n)
+{
+     int sum=0;
+    while(n<=10)
+    {
+        
+        sum=(n+sum);
+        n++;
+    }
+    printf("%d",sum);
+
+}
+void fact(int n)
+{
+    int fact=1;
+     for(int i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    printf("%d",fact);
+
+}
+void fib(int n)
+{
+     int n1=0,n2=1,n3;
+    printf("%d %d ",n1,n2);
+    for(int i=1;i<=n;i++){
+        n3=n1+n2;
+        printf("%d ",n3);
+        n1=n2;
+        n2=n3;
+    }
+
+}
+---------------------------------------------
+1 2 3 4 5 
+2 3 4 5 6 
+3 4 5 6 7 
+4 5 6 7 8 
+5 6 7 8 9 
+sol:
+#include<stdio.h>
+int main()
+{
+    for(int i=0;i<=4;i++)
+    {
+        for(int j=1;j<=5;j++)
+        {
+            printf("%d ",i+j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+------------------------------------------
+
+1 6 11 16 21
+2 7 12 17 22
+3 8 13 18 23
+4 9 14 19 24
+5 10 15 20 25 
+Sol:
+#include<stdio.h>
+
+void main()
+{
+    int i,j,n;
+    printf("Enter a number");
+    scanf("%d",&n);
+
+    for(i=1;i<=n;i++)
+    {  int x=i;
+        for(j=1;j<=n;j++)
+        {
+            printf("%d ",x);
+            x=x+n;
+        }
+        printf("\n");
+    }
+}
+-------------------------------------------------
+
